@@ -1,6 +1,6 @@
 def add(a, b):
     """
-    Add two numbers together.
+    Add two numbers together and return their sum.
 
     Parameters:
         a: The first number.

@@ -1,6 +1,6 @@
 # add
 
-Add two numbers together.
+Add two numbers together and return their sum.
 
 ## Parameters
 
