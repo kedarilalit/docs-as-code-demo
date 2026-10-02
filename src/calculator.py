@@ -25,6 +25,20 @@ def subtract(a, b):
     """
     return a - b
 
+def multiply(a, b, c):
+    """
+    Multiply three numbers.
+
+    Parameters:
+        a: The first number.
+        b: The second number.
+        c: The third number.
+
+    Returns:
+        The product of a, b, and c.
+    """
+    return a * b * c
 
 print(add(10, 20))
 print(subtract(20, 5))
+print(multiply(2, 3, 4))

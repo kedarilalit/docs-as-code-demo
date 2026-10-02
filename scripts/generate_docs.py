@@ -11,6 +11,8 @@ with open("docs/calculator.md", "w") as doc_file:
 
         if isinstance(item, ast.FunctionDef):
 
+            parameter_names = [argument.arg for argument in item.args.args]
+
             function_name = item.name
             documentation = ast.get_docstring(item)
 
@@ -42,6 +44,9 @@ with open("docs/calculator.md", "w") as doc_file:
                     returns.append(line)
 
             doc_file.write(f"# {function_name}\n\n")
+            doc_file.write("## Signature\n\n")
+            signature = ", ".join(parameter_names)
+            doc_file.write(f"`{function_name}({signature})`\n\n")
             doc_file.write(f"{description}\n\n")
 
             doc_file.write("## Parameters\n\n")
